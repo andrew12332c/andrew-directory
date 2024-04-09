@@ -1,0 +1,143 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+/* Body Styles */
+body {
+  background: linear-gradient(rgb(0,0,0,0), rgb(255,255,255,1)), url("../img/pexels-splash-of-rain-7321_downsized_crop2.jpg") no-repeat;
+  background-attachment: fixed;
+  color: #020202;
+  font-family: sans-serif;
+  font-size: 0.85em;
+}
+
+/* Links Styles */
+a {
+  color: #4a5859;
+}
+
+/* Title Styles */
+.title {
+  font-family: "Fjalla One";
+  font-size: 1.2em;
+}
+
+/* Wrapper Styles */
+.wrapper {
+  margin-top: 30px;
+  width: 1200px;
+}
+
+/* Margin for Various Elements */
+.sidebar-img,
+.footer,
+.title,
+.links,
+.box {
+  margin-top: 15px;
+}
+
+/* Main Content Styles */
+.main {
+  column-gap: 15px;
+}
+
+/* Main Wrapper Styles */
+.main-wrapper {
+  margin-left: 215px;
+}
+
+/* Footer Styles */
+.footer {
+  margin-bottom: 15px;
+}
+
+/* Links Styles */
+.links {
+  top: 0;
+  margin-top: 0;
+}
+
+/* Box Styles */
+.box,
+.sidebar-image,
+.sidebar-image img {
+  border: 0;
+  border-radius: 0.5em;
+  background: #ccd5d0;
+}
+
+/* Sidebar Box Styles */
+.sidebar .box,
+.sidebar-image {
+  background: #a5beb8;
+  border: #798886 1px solid;
+}
+
+/* Box Styles */
+.box {
+  border: #8d9896 1px solid;
+}
+
+/* Inner Styles */
+.inner {
+  overflow: hidden;
+}
+
+/* Custom Spacer for Links */
+.links li:before {
+  content: "ã€Ž";
+}
+
+.links li:after,
+.links .last:after {
+  content: "ã€";
+}
+
+/* Increase Nav Link Spacing */
+.links li {
+  margin: 0 0.275em;
+}
+
+/* Responsive Styles */
+@media(max-width:1215px) {
+  .wrapper {
+    width: 95%;
+  }
+  
+  .main-wrapper {
+    width: calc(100% - 225px);
+  }
+}
+
+/* Mobile Styles */
+@media (orientation: portrait), (max-width:800px) {
+  .wrapper {
+    width: 100%;
+  }
+  
+  .main-wrapper,
+  .sidebar,
+  .footer {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .sidebar {
+    float: none;
+    display: block;
+  }
+  
+  .sidebar-image {
+    margin: 0 auto;
+    width: 33%;
+    margin-top: 25px;
+  }
+  
+  .sidebar .sidebar-image img {
+    width: 100%;
+  }
+  
+  .footer {
+    margin-bottom: 25px;
+  }
+}
